@@ -78,7 +78,7 @@ export default function ChatModal({ isOpen, onClose }) {
       console.error('Error:', error);
       setMessages(prev => [...prev, { 
         role: 'assistant', 
-        content: 'Извини, произошла ошибка. Убедись что бэкенд запущен на localhost:8000' 
+        content: 'Извини, произошла ошибка. Убедись что бэкенд запущен.' 
       }]);
     } finally {
       setIsLoading(false);
