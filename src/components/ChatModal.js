@@ -2,6 +2,8 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
 export default function ChatModal({ isOpen, onClose }) {
   const [messages, setMessages] = useState([
     { role: 'assistant', content: 'Привет! Я AI-ассистент Георгия. Задай мне вопрос о его опыте, навыках или проектах!' }
@@ -60,7 +62,7 @@ export default function ChatModal({ isOpen, onClose }) {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/api/chat', {
+      const response = await fetch(`${API_URL}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
