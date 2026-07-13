@@ -2,7 +2,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef, useEffect } from 'react';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_URL = '';
 
 export default function ChatModal({ isOpen, onClose }) {
   const [messages, setMessages] = useState([

@@ -11,7 +11,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "https://portfolio-f1f2.vercel.app",
-        "https://portfolio-f1f2-pvz6w3l5u-georgii.vercel.app/",
+        "https://ogp.pythonanywhere.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -315,6 +315,10 @@ async def chat(request: ChatRequest):
         return ChatResponse(
             response="Извини, произошла техническая ошибка. Попробуй ещё раз или свяжись со мной напрямую через Telegram @gpopovdev"
         )
+    
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
 
 @app.get("/")
 async def root():
