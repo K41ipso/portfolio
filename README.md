@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Портфолио / Лендинг специалиста
 
-## Getting Started
+Этот проект представляет собой персональный лендинг, разработанный в рамках тестового задания на позицию AI Generalist / AI Automation Specialist.
 
-First, run the development server:
+🔗 **Демо:** https://portfolio-f1f2.vercel.app/
+
+## Цель проекта
+Не просто перечислить места работы, а структурно показать, почему мой опыт, навыки и подход к решению задач релевантны роли AI Automation Specialist. Акцент сделан на проектах, связанных с автоматизацией, работой с данными и построением эффективных пайплайнов.
+
+## 🛠 Технологический стек
+* **Фреймворк:** Next.js (App Router) / React
+* **Стилизация:** Tailwind CSS
+* **Анимации:** Framer Motion (если использовалось, иначе удали)
+* **Деплой:** Vercel
+
+## Структура и логика подачи
+1. **Hero-секция:** Четкое позиционирование и ценностное предложение.
+2. **Релевантный опыт:** Описание проектов с акцентом на решенные бизнес-задачи и использованные технологии.
+3. **Навыки:** Сгруппированы по категориям (Backend, Data, AI/ML инструменты, DevOps).
+4. **Контакты:** Простой способ связи.
+
+## Как запустить локально
 
 ```bash
+# Клонировать репозиторий
+git clone https://github.com/K41ipso/portfolio.git
+
+# Перейти в папку проекта
+cd portfolio
+
+# Установить зависимости
+npm install
+
+# Запустить сервер разработки
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
